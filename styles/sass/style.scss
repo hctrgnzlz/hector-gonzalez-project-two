@@ -1,6 +1,7 @@
 @import '__setup';
 
 
+
 body {
     background-color: white;
 }
@@ -125,6 +126,11 @@ img {
 
 }
 
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 80%;
+}
 
 .navigation {
         background-color: #EFFDF3;
@@ -159,12 +165,83 @@ img {
                 font-size: 35px;
                 color: #D64C31;
                  margin: 0 20px 0 0;
-                 z-index: 100;
+                 position: relative;
+            }
+
+            &__title::before {
+                content: "\f15b";
+	            font-family: "FontAwesome";
+                width: 35px;
+                height: 35px;
+                font-size: 25px;
+                text-align: center;
+                border-radius: 100px;
+                position: absolute;
+                left: -40px;
+                top: 5px;
+                background: #4ceea7;
+
             }
 
             &__text {
                 font-size: 15px;
                font-weight: 500;
             }
+}
+
+.banner {
+    background-image: url(/captured-final-assets/banner.jpg);
+    height: 50vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.profile {
+    border: yellow 4px dotted;
+
+        &__items {
+            border: red solid 3px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__image {
+            border: pink 2px dotted;
+            flex: 1 0 25%;
+        }
+
+        &__content {
+            border: orange 2px dotted;
+            flex: 1 0 75%;
+        }
+
+        &__title {
+            color: red;
+        }
+
+        &__text {
+
+        }
+}
+
+.gallery {
+    border: red dotted 1px;
+    padding-top: 30px;
+
+        &__items {
+            display: flex;
+            padding: 0;
+            margin: 0;
+            justify-content: space-around;
+        }
+
+        &__img {
+            list-style: none;
+            width: 30%;
+            // padding: 10px;
+        }
+
 }
 
