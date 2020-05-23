@@ -9,7 +9,7 @@ body {
 
 img {
     width: 100%;
-    display: block;
+    display: inline-block;
 }
 
 
@@ -58,12 +58,16 @@ img {
 }
 
 .intro {
-    border: 2px solid pink;
     padding: 150px 100px 100px 100px;
     text-align: center;
     background-color: #effdf3;
 }
 
+button {
+    background-color: #4CEEA7;
+    border: none;
+    padding: 10px;
+}
 
 .container {
     display: flex;
@@ -81,27 +85,35 @@ img {
             align-content: center;
             // border: 1px solid rgb(139, 135, 135);
             flex-basis: 1;
-            font-size: 3em;
             justify-content: center;
             /* margin-bottom: 1em; */
-             height: 40vw;
+            height: 35vw;
             width: 50%;
             position: relative;
         }
 
-        &__img1 {
+        &__info,
+        &__info2 {
+            padding: 0 60px 0 60px;
+        }
+
+        &__info2 {
+            text-align: right;
+        }
+
+        &__img {
             box-shadow: 30px 30px #fdfa60;
             width: 90%;
             position: absolute;
             top: -10%;
         }
 
-            &__img2 {
+        &__img2 {
             box-shadow: -30px 30px #fdfa60;
             width: 90%;
             right: 0;
             position: absolute;
-            bottom: 0%;
+            bottom: 20%;
         }
 
 }
@@ -123,11 +135,11 @@ img {
                 text-align: left;
                 margin: 0;
                 padding: 0;
-                margin-top: 30px;
+                padding: 70px 0 70px 0;
             }
 
             &__content {
-                padding: 20px 20px 0 20px;
+                padding: 0 0 0 30px;
                 background-color:#EFFDF3 ;
             }
 
@@ -139,22 +151,44 @@ img {
                 text-align: left;
             }
             
-            &__title {
+            &__title,
+            &__icon2 {
                  position: relative;
             }
 
             &__title::before {
-                content: "\f15b";
-	            font-family: "FontAwesome";
+                 content: "";
+                font-size: 20px;
                 width: 35px;
                 height: 35px;
-                font-size: 25px;
-                text-align: center;
                 border-radius: 100px;
                 position: absolute;
                 left: -40px;
                 top: 5px;
                 background: #4ceea7;
+                display: flex; 
+                justify-content: center;
+                align-items: center;
+            }
+
+            &__icon1::before {
+                content: "\f030";
+                font-family: "FontAwesome";
+            }
+
+             &__icon2::before {
+                content: "\f0c0";
+                font-family: "FontAwesome";
+            }
+
+             &__icon3::before {
+                content: "\f15b";
+                font-family: "FontAwesome";
+            }
+
+             &__icon4::before {
+                content: "\f095";
+                font-family: "FontAwesome";
             }
 
 }
@@ -180,7 +214,7 @@ img {
         &__image {
             flex: 1 0 25%;
             box-shadow: 20px 20px #fdfa60;
-            margin-right: 40px;
+            margin-right: 40px; 
         }
 
         &__content {
@@ -190,7 +224,6 @@ img {
 }
 
 .gallery {
-    border: red dotted 1px;
     padding-top: 30px;
 
         &__items {
