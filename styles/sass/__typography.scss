@@ -1,0 +1,52 @@
+// hero text
+.hero {
+        &__link {
+            font-family: 'Playfair Display', 'serif';
+            font-size: 20px;
+            line-height: 29px;
+            letter-spacing: 1px;
+            color: #2C2C2C;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        &__text {
+            font-family: 'Playfair Display', 'serif';
+            font-size: 100px;
+            color: #2C2C2C;
+            text-transform: uppercase;
+        }
+}
+
+// heading text
+.intro {
+        &__title {
+            font-family: 'Playfair Display', 'serif';
+            font-size: 42px;
+            color: #2C2C2C;
+        }
+}
+
+.container,
+.navigation,
+.profile {
+        &__title {
+            font-family: 'Playfair Display', 'serif';
+            font-size: 32px;
+            color: #2C2C2C;
+            text-transform: uppercase;
+        }
+}
+
+
+// body text
+.intro,
+.container,
+.navigation,
+.profile {
+        &__text {
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+        }
+}
+
+
