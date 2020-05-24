@@ -67,10 +67,15 @@ img {
     background-color: #EFFDF3;
 }
 
-button {
+button,
+.button {
     background-color: #4CEEA7;
     border: none;
     padding: 10px;
+    
+        &__comments {
+            width:calc(100% - 20px);
+        }
 }
 
 .container {
@@ -228,15 +233,15 @@ button {
         }
 }
 
-.comments {
-    margin-left: 34%;
+// .comments {
+//     margin-left: 34%;
 
-        &__image {
-            box-shadow: none;
-            flex: 1 0 1%;
-        }
+//         &__image {
+//             box-shadow: none;
+//             flex: 1 0 1%;
+//         }
 
-}
+// }
 
 .gallery{
     padding-top: 30px;
@@ -291,7 +296,7 @@ footer {
         }
 
         &__article {
-            box-shadow: -5px 5px #FDFA60;;
+            box-shadow: -5px 5px #FDFA60;
             display: flex;
             flex-direction: column;
             width: 70%;
@@ -322,6 +327,7 @@ aside {
 }
 
 .comments {
+    margin-left: 34%;
     width: 100%;
     padding-top: 30px;
     // border: 4px red solid;
@@ -344,17 +350,69 @@ aside {
 
         &__image {
             flex: 1 0 1%;
+            box-shadow: none;
             display: inline;
             align-content: center;
             align-self: center;
             margin: 0;
             padding: 0;
         }
-
-        // &__img {
-        //     width:60%;
-    
-
-        // }
-
     }
+    
+.form {
+    display: flex;
+    flex-direction: column;
+    // width: 100%;
+    margin-left: 34%;
+    align-items: left;
+    padding: 0;
+
+        &__info {
+            display: flex;
+            justify-content: left;
+            width: 100%;
+        }
+}
+
+form {
+    margin: 0;
+    width: 100%;
+
+}
+
+.myForm {
+width: 360px;
+padding: 10px;
+text-align: start;
+margin: 0 auto;
+}
+
+input {
+width: 100%;
+background-color: #EFFDF3;
+border: 2px solid #EFFDF3;
+padding: 10px;
+color: #4CEEA7;
+border-bottom: #4CEEA7 2px solid;
+
+}
+
+input[type="email"],
+input[type="text"] {
+margin: 10px 20px 20px 0px;
+width: 100%;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="message"]::placeholder
+{
+color: #2C2C2C;
+}
+
+input[type="message"] {
+height: 200px;
+margin-bottom: 10px;
+border: 2px #4CEEA7 solid;
+width: 98%;
+}
