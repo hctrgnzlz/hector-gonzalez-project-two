@@ -4,7 +4,7 @@
 
 
 body {
-    background-color: white;
+    background-color: #EFFDF3;
 }
 
 img {
@@ -18,10 +18,15 @@ img {
     min-height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
-    display: flex;
-    justify-content: flex-end;
+    // display: flex;
+    // justify-content: flex-end;
     position: relative;
     background-position: left;
+
+        &__container {
+            display: flex;
+            justify-content: flex-end;
+        }
 
         &__nav {
             margin: 0 30px 0 0 ;
@@ -41,12 +46,11 @@ img {
             position: absolute;
             // left: 60%;
             right: 0;
-            width: 40%;
+            width: 40%; 
             bottom: -10%;
-            background-color: #fdfa60;
+            background-color: #FDFA60;
             padding: 30px 0 30px 30px;
         }
-
 
         &__title {
             position: absolute;
@@ -60,7 +64,7 @@ img {
 .intro {
     padding: 150px 100px 100px 100px;
     text-align: center;
-    background-color: #effdf3;
+    background-color: #EFFDF3;
 }
 
 button {
@@ -102,14 +106,14 @@ button {
         }
 
         &__img {
-            box-shadow: 30px 30px #fdfa60;
+            box-shadow: 30px 30px #FDFA60;
             width: 90%;
             position: absolute;
             top: -10%;
         }
 
         &__img2 {
-            box-shadow: -30px 30px #fdfa60;
+            box-shadow: -30px 30px #FDFA60;
             width: 90%;
             right: 0;
             position: absolute;
@@ -165,7 +169,7 @@ button {
                 position: absolute;
                 left: -40px;
                 top: 5px;
-                background: #4ceea7;
+                background: #4CEEA7;
                 display: flex; 
                 justify-content: center;
                 align-items: center;
@@ -202,7 +206,8 @@ button {
 }
 
 
-.profile {
+.profile,
+.comments {
     padding: 50px 0 50px 0;
     background: #EFFDF3;
 
@@ -213,7 +218,7 @@ button {
 
         &__image {
             flex: 1 0 25%;
-            box-shadow: 20px 20px #fdfa60;
+            box-shadow: 20px 20px #FDFA60;
             margin-right: 40px; 
         }
 
@@ -223,7 +228,17 @@ button {
         }
 }
 
-.gallery {
+.comments {
+    margin-left: 34%;
+
+        &__image {
+            box-shadow: none;
+            flex: 1 0 1%;
+        }
+
+}
+
+.gallery{
     padding-top: 30px;
 
         &__items {
@@ -249,8 +264,97 @@ footer {
 
 
 
-.blogbox {
-    color: red;
-    height: 30px;
-    border: red dotted 3px;
+// blog page starts 
+
+.blog {
+    background-image: url(/captured-final-assets/blog-header.jpg);
+    background-size: cover;
+    // height: 60vh;
+    
+         &__img {
+            position: absolute;
+            // left: 60%;
+            right: 0;
+            width: calc(70% - 80px);
+            top: 350px;
+            padding: 0;
+            box-shadow: -40px 40px #FDFA60;
+        }
+
+        &__main {
+            display: flex;
+            background-color: #EFFDF3;
+            justify-content: space-between;
+            padding: 60px 0 0 0;
+
+
+        }
+
+        &__article {
+            box-shadow: -5px 5px #FDFA60;;
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            padding: 40px 50px 0 50px;
+        }
+
+
+        &__title {
+            text-align: center;
+            margin-top: 140px;
+        }
+
+
 }
+
+aside {
+    width: 30%;
+    margin: 0 70px 0 0;
+
+}
+
+.aside {
+        &__about {
+            background-color: #FAFAFA;
+            margin-left: 70px;
+            padding: 20px;
+        }
+}
+
+.comments {
+    width: 100%;
+    padding-top: 30px;
+    // border: 4px red solid;
+    background-color: #EFFDF3;
+
+        &__items {
+            display: flex;
+            // flex-direction: column;
+            padding: 0;
+            margin: 0;
+            justify-content: space-between;
+
+        }
+
+        &__content {
+            flex: 1 0 80%;
+            padding-left: 10px;
+            margin-bottom: 60px;
+        }
+
+        &__image {
+            flex: 1 0 1%;
+            display: inline;
+            align-content: center;
+            align-self: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        // &__img {
+        //     width:60%;
+    
+
+        // }
+
+    }

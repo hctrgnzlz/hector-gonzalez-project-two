@@ -1,5 +1,6 @@
 // hero text
-.hero {
+.hero,
+.blog {
         &__link {
             font-family: 'Playfair Display', 'serif';
             font-size: 20px;
@@ -10,7 +11,7 @@
             text-transform: uppercase;
         }
 
-        &__text {
+        &__title {
             font-family: 'Playfair Display', 'serif';
             font-size: 100px;
             color: #2C2C2C;
@@ -30,7 +31,10 @@
 
 .container,
 .navigation,
-.profile {
+.profile,
+.aside,
+.article,
+.comments {
         &__title {
             font-family: 'Playfair Display', 'serif';
             font-size: 32px;
@@ -39,12 +43,28 @@
         }
 }
 
+.aside {
+        &__title {
+            font-size: 20px;
+        }
+
+        &__link {
+            text-decoration: none;
+            color: #2C2C2C;
+            font-style: italic;
+        }
+}
+
+
 
 // body text
 .intro,
 .container,
 .navigation,
-.profile, {
+.profile,
+.aside,
+.article,
+.comments {
         &__text {
             font-family: 'Roboto', sans-serif;
             font-size: 20px;
@@ -53,6 +73,18 @@
         }
 }
 
+.aside {
+        &__text {
+            font-size: 15px;
+            line-height: 20px;
+        }
+
+        &__item {
+            font-family: 'Roboto', sans-serif;
+            font-size: 15px;
+
+        }
+    }
 
 // button text
 
@@ -73,4 +105,16 @@ text-transform: uppercase;
             color: #FFFF;
             margin: 0;
         }
+}
+
+// blog css
+
+.comments {
+font-family: 'Roboto', sans-serif;
+
+        &__date {
+            font-size: 15px;
+            
+        }
+
 }
