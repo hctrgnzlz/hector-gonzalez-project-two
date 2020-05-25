@@ -254,7 +254,8 @@ html {
   text-transform: uppercase;
 }
 
-.intro__title {
+.intro__title,
+.contact__title {
   font-family: 'Playfair Display', 'serif';
   font-size: 42px;
   color: #2C2C2C;
@@ -409,6 +410,11 @@ button,
 button__comments,
 .button__comments {
   width: calc(100% - 20px);
+}
+
+button__contact,
+.button__contact {
+  width: 100%;
 }
 
 .container {
@@ -654,7 +660,7 @@ footer {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 70%;
-  padding: 40px 50px 0 50px;
+  padding: 170px 50px 0 50px;
 }
 
 .blog__title {
@@ -675,7 +681,6 @@ aside {
 
 .comments {
   margin-left: 34%;
-  width: 100%;
   padding-top: 30px;
   background-color: #EFFDF3;
 }
@@ -737,12 +742,6 @@ aside {
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
-  width: 100%;
-}
-
-form {
-  margin: 0;
-  width: 100%;
 }
 
 .myForm {
@@ -796,4 +795,32 @@ input[type="message"] {
   margin-bottom: 10px;
   border: 2px #4CEEA7 solid;
   width: 98%;
+}
+
+.contact {
+  background-image: url(/captured-final-assets/contact-header.jpg);
+  background-size: cover;
+}
+
+.contact__title {
+  text-align: right;
+  margin-top: 250px;
+  width: 100%;
+  margin-right: 390px;
+}
+
+.contact__form {
+  position: absolute;
+  right: 0;
+  height: 400px;
+  width: calc(70% - 80px);
+  top: 400px;
+  padding: 20px 30px 30px 30px;
+  -webkit-box-shadow: -40px 40px #FDFA60;
+          box-shadow: -40px 40px #FDFA60;
+  background-color: #FAFAFA;
+}
+
+input {
+  background-color: #FAFAFA;
 }
