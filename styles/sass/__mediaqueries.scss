@@ -134,7 +134,7 @@ aside {
         }
 
         &__title {
-            margin-top: 40px;
+            margin-top: 160px;
         }
 }
 
@@ -170,8 +170,14 @@ aside {
 @media (max-width: 480px) {
    .hero,
     .blog {
+        &__list{
+            border: 3px solid green;
+            background-color: #FAFAFA;
+            display: block;
+        }
         &__link {
-            display: none;
+            display: flex;
+            background-color: #FAFAFA;
         }
 
         &__title {
@@ -180,6 +186,49 @@ aside {
             left: -5%;
         }
     }
+
+
+
+.hero__nav {
+  background-color: none;
+  /* box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1); */
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+.hero__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: transparent;
+  border: 1px solid #EFFDF3
+}
+
+.hero__item {
+    margin: 0;
+}
+.hero__link {
+  display: block;
+  padding: 20px 20px;
+//   border-right: 1px solid #f4f4f4;
+  text-decoration: none;
+  margin:0;
+  border: 1px solid #EFFDF3;
+  font-size: 30px;
+  text-align: center;
+}
+
+.hero__link:hover {
+  background-color: #f4f4f4;
+}
+
+
+.menu-icon .navicon {
+  display: block;
+}
+
 
 .intro {
     // margin: -50px -50px -50px -50px;
@@ -262,6 +311,7 @@ aside {
             &__icon2 {
                  position: relative;
                  font-size: 32px;
+                 color: black;
             }
 
             &__title::before {
@@ -440,28 +490,105 @@ aside {
             margin: 0px 0px 120px 20px;
             padding: 0;
         }
+    }
 
-
+    .button {
+        &__comments {
+            width: 85%;
+        }
     }
 
 .form {
-    display: flex;
-    flex-direction: column;
-    // width: 100%;
-    margin-left: 34%;
-    align-items: left;
+    margin-left: 0;
+    align-items: center;
     padding: 0;
 
         &__info {
-            display: flex;
-            justify-content: left;
-            // width: 100%;
+            display: block;
+            justify-content: center;
+            width: 100%;
         }
 }
 
 
+input[type="email"],
+input[type="text"] {
+    margin: 0px 0px 20px 0px;
+    width: 100%;
+}
+
+
+input[type="message"] {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+
+
+.contact {
+    background-position: left;
+
+            &__title {
+            text-align: center;
+            margin-top: 270px;
+            font-size: 50px;
+            text-shadow: 1px 1px#FAFAFA;
+            }
+
+            &__main {
+                padding-bottom: 200px;
+                align-items: center;
+                
+            }
+
+            &__form {
+                width: 100%;
+                box-shadow: none;
+            }
+}
+
+
+.contact__main {
+    padding: 400px 0 0 0;
+    width: 100%;
+    // border: red 22px solid;
+}
+
+.contact__aside {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+aside {
+    margin: 0;
+}
+
+.aside {
+     &__icon {
+    font-size: 30px;
+    text-align: center;
+    margin: 0 auto;
+        }
 
 }
+
+.aside2 {
+    padding-top: 10px;
+    align-self: center;
+    width: 90%;
+    margin: 0 auto;
+    
+        &__link {
+            color: #2c2c2c;
+        }
+        &__link:hover {
+            color: #FDFA60;
+        }
+    }
+}
+
+
 
 
 

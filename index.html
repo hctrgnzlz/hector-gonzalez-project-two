@@ -7,108 +7,107 @@
     <link rel="stylesheet" href="styles/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Roboto&display=swap"rel="stylesheet">
     <script src="https://kit.fontawesome.com/d15c03b01c.js" crossorigin="anonymous"></script>
-    
-
 </head>
+
 <body>
-        <header>
-            <div class="hero">
-                <div class="hero__container">
-                    <nav class="hero__nav">
-                        <ul class="hero__list">
-                            <li class="hero__item"><a class="hero__link" href="/index.html">Home</a></li>
-                            <li class="hero__item"><a class="hero__link" href="">About</a></li>
-                            <li class="hero__item"><a class="hero__link" href="/blog.html">Blog</a></li>
-                            <li class="hero__item"><a class="hero__link" href="/contact.html">Contact</a></li>
-                        </ul>
-                    </nav>
-                    <img src="./captured-final-assets/header-box-image.jpg" class="hero__img" alt="">
-                    <!-- <div class="hero__title"> -->
-                        <h1 class="hero__title">Captured</h1>
-                    <!-- </div> -->
-                </div>
+<!-- start of header -->
+    <header>
+        <div class="hero">
+            <div class="hero__container">
+                <nav class="hero__nav">
+                    <input class="menu-btn" type="checkbox" id="menu-btn">
+                    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                    <ul class="hero__list">
+                        <li class="hero__item"><a class="hero__link" href="/index.html">Home</a></li>
+                        <li class="hero__item"><a class="hero__link" href="">About</a></li>
+                         <li class="hero__item"><a class="hero__link" href="/blog.html">Blog</a></li>
+                         <li class="hero__item"><a class="hero__link" href="/contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <img src="./captured-final-assets/header-box-image.jpg" class="hero__img" alt="Camera lense">
+                <h1 class="hero__title">Captured</h1>
             </div>
-        </header>
+        </div>
+    </header>
 
 
-
-
+<!-- start of body -->
 <section class="intro">
     <div class="intro__content">
         <h1 class="intro__title">What is captured?</h1>
-        <p class="intro__text">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam quae assumenda eius, sapiente ipsam, nisi expedita temporibus minima ratione nihil delectus rem culpa nulla dolores! Totam consequuntur, quasi illum, reiciendis ullam non voluptatem in amet, omnis facilis nihil itaque dolor.</p>
-        </div>
-        <button>Find out more</button>
+        <p class="intro__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam quae assumenda eius, sapiente ipsam, nisi expedita temporibus minima ratione nihil delectus rem culpa nulla dolores! Totam consequuntur, quasi illum, reiciendis ullam non voluptatem in amet, omnis facilis nihil itaque dolor.</p>
+    </div>
+    <button>Find out more</button>
 </section>
-<section>
 
+<!-- start of grid section -->
+<section class="grid">
     <div class="container">
- 
-            <div class="container__content">
-                <img src="./captured-final-assets/left-image.jpg" class="container__img" alt="">
+      <div class="container__content">
+            <img src="./captured-final-assets/left-image.jpg" class="container__img" alt="Camera pointed towards the sky">
             </div>
-        
-            <div class="container__content container__info">
-                <h1 class="container__title">Unlock your skilss</h1>
-                <p class="container__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptates fugit quia ut perspiciatis id.</p>
-                <button>Read More</button>
-            </div>
-        
-        
-            <div class="container__content container__info2 ">
-                <h1 class="container__title">Getting new gear</h1>
-                <p class="container__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. In nisi facilis alias eaque odio placeat?</p>
-                <button>Read More</button>
-            </div>
-
-            <div class="container__content">
-                <img src="./captured-final-assets/right-image.jpg" class="container__img2" alt="">
-            </div>
+        <div class="container__content container__info">
+            <h1 class="container__title">Unlock your skilss</h1>
+            <p class="container__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptates fugit quia ut perspiciatis id.</p>
+            <button>Read More</button>
+        </div>
+        <div class="container__content container__info2 ">
+             <h1 class="container__title">Getting new gear</h1>
+            <p class="container__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. In nisi facilis alias eaque odio placeat?</p>
+            <button>Read More</button>
+        </div>
+    <div class="container__content">
+        <img src="./captured-final-assets/right-image.jpg" class="container__img2" alt="looking through taken pictures on camera UI">
+    </div>
     </div>
 </section>
 
+
+<!-- start of navigation section -->
 <section class="navigation">
     <div class="wrapper">
-
         <ul class="navigation__list">
             <li class="navigation__item">
                 <div class="navigation__content">
-                    <h2 class="navigation__title navigation__icon1">Top Picks</h2>
+                    <h2 class="navigation__title navigation__icon1"><a href="" class="navigation__link">Top Picks</a></h2>
                     <p class="navigation__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam expedita sapiente impedit aspernatur maxime quaerat eligendi voluptas repellendus aliquid porro?</p>
                 </div>
             </li>
             <li class="navigation__item">
                 <div class="navigation__content">
-                    <h2 class="navigation__title navigation__icon2">Community</h2>
+                    <h2 class="navigation__title navigation__icon2"><a href="" class="navigation__link">Community</a></h2>
                     <p class="navigation__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non, nisi. Non, tempore sit. Vero nisi repellat natus qui quo amet?</p>
                 </div>
             </li>
             <li class="navigation__item">
                 <div class="navigation__content">
-                    <h2 class="navigation__title navigation__icon3">Blog</h2>
+                    <h2 class="navigation__title navigation__icon3"><a href="/blog.html" class="navigation__link">Blog</a></h2>
                     <p class="navigation__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi temporibus veniam nostrum officiis facilis obcaecati cupiditate accusantium ex deserunt dicta.</p>
                 </div>
             </li>
             <li class="navigation__item">
                 <div class="navigation__content">
-                    <h2 class="navigation__title navigation__icon4">Get in touch</h2>
+                    <h2 class="navigation__title navigation__icon4"><a href="/contact.html" class="navigation__link">Get in Touch</a></h2>
+                    <p class="navigation__text">Lorem, ipsum dolor sit
                     <p class="navigation__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum officiis voluptates accusamus assumenda neque tempore quis eaque perferendis hic porro?</p>
                 </div>
             </li>
         </ul>
     </div>
-    </section>
+</section>
 
+
+<!-- start of banner section -->
 <section class="banner">
 </section>
 
+
+<!-- start of profile section -->
 <section class="profile">
     <div class="wrapper">
-
         <div class="profile__items">
             <div class="profile__image">
-                <img src="/captured-final-assets/small-box.jpg" class="profile__img" alt="">
+                <img src="/captured-final-assets/small-box.jpg" class="profile__img" alt="man on cliff looking down at camera">
             </div>
             <div class="profile__content">
                 <h1 class="profile__title">This month's profile</h1>
@@ -119,17 +118,20 @@
     </div>
 </section>
 
+
+<!-- start of gallery section -->
 <section class="gallery">
     <div class="wrapper">
-
         <ul class="gallery__items">
-            <li class="gallery__img"><img src="/captured-final-assets/gallery-image-1.jpg" alt="" class=""></li>
-            <li class="gallery__img"><img src="/captured-final-assets/gallery-image-2.jpg" alt="" class=""></li>
-            <li class="gallery__img"><img src="/captured-final-assets/gallery-image-3.jpg" alt="" class=""></li>
+            <li class="gallery__img"><img src="/captured-final-assets/gallery-image-1.jpg" alt="Back of camera" class=""></li>
+            <li class="gallery__img"><img src="/captured-final-assets/gallery-image-2.jpg" alt="Camera in the bushes" class=""></li>
+            <li class="gallery__img"><img src="/captured-final-assets/gallery-image-3.jpg" alt="Camera and lense" class=""></li>
         </ul>
     </div>
     </section>
 
+
+<!-- start of footer -->
 <footer>
     <div class="footer">
         <p class=footer__text>Copyright ©Juno College 2020</p>

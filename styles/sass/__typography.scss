@@ -9,18 +9,18 @@
             color: #2C2C2C;
             text-decoration: none;
             text-transform: uppercase;
-        }
+            }
         
         &__link:hover {
-            border-bottom: 4px solid #4CEEA7;
-        }
+            border-bottom: 5px solid #4CEEA7;
+            }
 
         &__title {
             font-family: 'Playfair Display', 'serif';
             font-size: 100px;
             color: #2C2C2C;
             text-transform: uppercase;
-        }
+            }
 }
 
 // heading text
@@ -31,7 +31,7 @@
             font-size: 42px;
             color: #2C2C2C;
             text-transform: uppercase;
-        }
+            }
 }
 
 .container,
@@ -45,7 +45,7 @@
             font-size: 32px;
             color: #2C2C2C;
             text-transform: uppercase;
-        }
+            }
 }
 
 .aside {
@@ -75,24 +75,23 @@
             font-size: 20px;
             line-height: 32px;
             text-align: left;
-        }
+            }
 }
 
 .aside {
         &__text {
             font-size: 15px;
             line-height: 20px;
-        }
+            }
 
         &__item {
             font-family: 'Roboto', sans-serif;
             font-size: 15px;
-
-        }
+            }
     }
 
-// button text
 
+// button text
 button {
 font-family: 'Playfair Display', 'serif';
 font-size: 20px;
@@ -109,17 +108,15 @@ text-transform: uppercase;
             font-size: 10px;
             color: #FFFF;
             margin: 0;
-        }
+            }
 }
 
-// blog css
-
+// blog text
 .comments {
 font-family: 'Roboto', sans-serif;
 
         &__date {
             font-size: 15px;
-            
-        }
+            }
 
 }
