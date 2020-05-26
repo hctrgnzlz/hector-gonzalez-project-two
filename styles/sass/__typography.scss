@@ -10,6 +10,10 @@
             text-decoration: none;
             text-transform: uppercase;
         }
+        
+        &__link:hover {
+            border-bottom: 4px solid #4CEEA7;
+        }
 
         &__title {
             font-family: 'Playfair Display', 'serif';
